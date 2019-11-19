@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Sabores_Unicos.Site" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sabores Únicos</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <style type="text/css">
+          .auto-style3 {
+              text-align: right;
+          }
+      </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="Index.aspx" class="current">Inicio</a></li>            
+            <li><a href="SobreNos.aspx"class="current">Sobre Nós</a></li>  
+            <li><a href="Contactos.aspx"class="current">Contactos</a></li>
+    	</ul>
+    </div> 
+            <div id="templateright">
+                <ul class="auto-style3">
+             <asp:LinkButton ID="LinkButtonUser" runat="server" OnClick="LinkButtonUser_Click"></asp:LinkButton>
+             <asp:LinkButton ID="LinkButtonLogin" runat="server" OnClick="LinkButtonLogin_Click">Login</asp:LinkButton>  |
+             <asp:LinkButton ID="LinkButtonLogout" runat="server" OnClick="LinkButtonLogout_Click" Visible="False">Logout</asp:LinkButton>
+             <asp:LinkButton ID="LinkButtonRegistar" runat="server" OnClick="LinkButtonRegistar_Click">Registar</asp:LinkButton>
+    	</ul>
+                </div>
+          
+            <!-- end of menu -->
+    
+    <div id="templatemo_header">
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo_novembro.jpg"  Height="162px" Width="100%" />
+        
+    </div> <!-- end of header -->
+    
+    <div id="templatemo_content">
+    	<div>
+    </div>
+        <div id="templatemo_content_left">
+        	<div class="templatemo_content_left_section">
+            	<h1>Horticulas</h1>
+                <ul>
+                    <li><a href="Cabazes.aspx">Cabazes</a></li>
+                    <li><a href="Legumes.aspx">Legumes</a></li>
+                    <li><a href="Fruta.aspx">Fruta</a></li>
+                    <li><a href="ErvasAromaticas.aspx">Ervas Aromáticas</a></li>
+            	</ul>
+            </div>
+			<div class="templatemo_content_left_section">
+            	<h1>Artesanal</h1>
+                <ul>
+                    <li><a href="Sabonetes.aspx">Sabonetes</a></li>
+                  
+            	</ul>
+            </div>
+            
+        </div> <!-- end of content left -->
+        
+        <div id="templatemo_content_right">
+            
+         
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+            
+            &nbsp;</div> <!-- end of content right -->
+    
+    	<div class="cleaner_with_height">&nbsp;</div>
+    </div> <!-- end of content -->
+    
+         <div id="templatemo_footer">
+    
+	       <a href="subpage.html">Inicio</a> | <a href="#">FAQs</a> | <a href="#">Contacte-nos</a><br />
+        Copyright © 2024 <a href="#"><strong>Sabores Únicos</strong></a> 
+         </div> 
+    <!-- end of footer -->
+<!--  Free CSS Template www.templatemo.com -->
+<!-- end of container -->
+    </form>
+</body>
+</html>
